@@ -1,0 +1,14 @@
+{
+  "name": "project",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nickygb/monorepo-shared-lib.git",
+  "author": "<nicogrunfeld@gmail.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

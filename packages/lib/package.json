@@ -1,0 +1,24 @@
+{
+  "name": "@project/lib",
+  "version": "1.0.0",
+  "exports": {
+    "./env": "./dist/src/env/index.js",
+    "./time": "./dist/src/time/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "env": ["dist/src/env/index.d.ts"],
+      "time": ["dist/src/time/index.d.ts"]
+   }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  },
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf dist"
+  }
+}
